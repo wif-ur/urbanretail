@@ -178,20 +178,21 @@
   <!-- Hero Section -->
   <div class="hero">
     <h1>POSH Training for the Urban Retail</h1>
+    <h1><strong>POSH ट्रेनिंग शहरी रिटेल के लिए</strong></h1>
   </div>
 
   <!-- Main Content -->
   <div class="container">
 
     <!-- Step 1: Verify Details -->
-    <div id="details-section">
+   <div id="details-section" style="color: maroon; font-weight: bold;">
       <h2>Verify Your Details</h2>
+      <h2>अपनी जानकारी की पुष्टि करें</h2>
       <p id="shop-details"></p>
       <p><strong>Are the above details correct?</strong></p>
        <p><strong>क्या ऊपर दी गई जानकारी सही है?</strong></p>
-      <p style="color:#555;">क्या यह जानकारी सही है?</p>
-      <button class="btn" id="confirm-btn">Yes, I Confirm/हाँ में पुष्टि करता हूँ </button>
-      <button class="btn btn-secondary" id="deny-btn">No, Incorrect Details/नही जानकारी ग़लत है</button>
+      <button class="btn" id="confirm-btn">Yes, I Confirm/हाँ, मैं पुष्टि करता हूँ </button>
+      <button class="btn btn-secondary" id="deny-btn">No, Incorrect Details/नहीं,जानकारी ग़लत है</button>
     </div>
 
     <!-- Correction Form -->
@@ -199,20 +200,19 @@
       <h2>Enter Correct Details/सही जानकारी भरें</h2>
       <p>Please fill in the correct Shop Name and Market Name:</p>
        <p>कृपया दुकान और मार्केट का सही नाम चुनें:</p>
-      <input type="text" id="correct-shopname" placeholder="Shop Name">
-      <input type="text" id="correct-marketname" placeholder="Market Name">
-      <button class="btn" id="submit-correction">Submit Correct Details</button>
+      <input type="text" id="correct-shopname" placeholder="Shop Name : दुकान का naam">
+      <input type="text" id="correct-marketname" placeholder="Market Name : मार्केट का नाम">
+      <button class="btn" id="submit-correction">Submit Correct Details : सही जानकारी जमा करें</button>
     </div>
 
     <!-- Step 2: Password -->
     <div id="confirmation-section" class="hidden">
-      <h2>Your Password</h2>
-      <h2>आपका पासवर्ड</h2>
+      <h2>Your Password : आपका पासवर्ड</h2>
       <p id="confirmation-msg"></p>
       <div class="card">
         Your Password/आपका पासवर्ड: <span id="shop-id"></span>
          <p>Please paste this password in the "Nickname" field on the next page </p>
-         <p>कृपया इस पासवर्ड को आगे "Nickname" के फील्ड में पेस्ट करें</p>
+         <p><strong>कृपया इस पासवर्ड को आगे "Nickname" के फील्ड में पेस्ट करें</strong></p>
       </div>
       <button class="btn" id="go-to-links-btn">Proceed to Training/ट्रेनिंग की ओर बढ़ें</button>
     </div>
@@ -220,14 +220,14 @@
     <!-- Step 3: Training Links -->
     <div id="final-section" class="hidden">
       <h2>Choose Your Training</h2>
-      <h2>आपका इस दुकान में क्या रोके है?</h2>
+      <h2>आपका इस दुकान में क्या रोल है?</h2>
       <div class="card">
         <p><strong>Owner / Manager Training : मालिक / मैनेजर की ट्रेनिंग </strong></p>
-        <button class="btn" id="btn-employer">Start Employer Training : मालिक/मैनेजर की ट्रेनिंग </button>
+        <button class="btn" id="btn-employer">Start Employer Training : मालिक/मैनेजर की ट्रेनिंग शुरू करें </button>
       </div>
       <div class="card">
         <p><strong>Employee Training : एम्प्लोयी/कर्मचारी की ट्रेनिंग </strong></p>
-        <button class="btn btn-secondary" id="btn-employee">Start Employee Training</button>
+        <button class="btn btn-secondary" id="btn-employee">Start Employee Training : कर्मचारी ट्रेनिंग शुरू करें</button>
       </div>
     </div>
   </div>
@@ -355,6 +355,7 @@
   </script>
 </body>
 </html>
+
 
 
 
