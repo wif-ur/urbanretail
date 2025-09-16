@@ -188,15 +188,17 @@
       <h2>Verify Your Details</h2>
       <p id="shop-details"></p>
       <p><strong>Are the above details correct?</strong></p>
+       <p><strong>क्या ऊपर दी गई जानकारी सही है?</strong></p>
       <p style="color:#555;">क्या यह जानकारी सही है?</p>
-      <button class="btn" id="confirm-btn">Yes, I Confirm</button>
-      <button class="btn btn-secondary" id="deny-btn">No, Incorrect Details</button>
+      <button class="btn" id="confirm-btn">Yes, I Confirm/हाँ में पुष्टि करता हूँ </button>
+      <button class="btn btn-secondary" id="deny-btn">No, Incorrect Details/नही जानकारी ग़लत है</button>
     </div>
 
     <!-- Correction Form -->
     <div id="correction-section" class="hidden">
-      <h2>Enter Correct Details</h2>
+      <h2>Enter Correct Details/सही जानकारी भरें</h2>
       <p>Please fill in the correct Shop Name and Market Name:</p>
+       <p>कृपया दुकान और मार्केट का सही नाम चुनें:</p>
       <input type="text" id="correct-shopname" placeholder="Shop Name">
       <input type="text" id="correct-marketname" placeholder="Market Name">
       <button class="btn" id="submit-correction">Submit Correct Details</button>
@@ -205,23 +207,26 @@
     <!-- Step 2: Password -->
     <div id="confirmation-section" class="hidden">
       <h2>Your Password</h2>
+      <h2>आपका पासवर्ड</h2>
       <p id="confirmation-msg"></p>
       <div class="card">
-        Your Password: <span id="shop-id"></span>
+        Your Password/आपका पासवर्ड: <span id="shop-id"></span>
          <p>Please paste this password in the "Nickname" field on the next page </p>
+         <p>कृपया इस पासवर्ड को आगे "Nickname" के फील्ड में पेस्ट करें</p>
       </div>
-      <button class="btn" id="go-to-links-btn">Proceed to Training</button>
+      <button class="btn" id="go-to-links-btn">Proceed to Training/ट्रेनिंग की ओर बढ़ें</button>
     </div>
 
     <!-- Step 3: Training Links -->
     <div id="final-section" class="hidden">
       <h2>Choose Your Training</h2>
+      <h2>आपका इस दुकान में क्या रोके है?</h2>
       <div class="card">
-        <p><strong>Owner / Manager Training</strong></p>
-        <button class="btn" id="btn-employer">Start Employer Training</button>
+        <p><strong>Owner / Manager Training : मालिक / मैनेजर की ट्रेनिंग </strong></p>
+        <button class="btn" id="btn-employer">Start Employer Training : मालिक/मैनेजर की ट्रेनिंग </button>
       </div>
       <div class="card">
-        <p><strong>Employee Training</strong></p>
+        <p><strong>Employee Training : एम्प्लोयी/कर्मचारी की ट्रेनिंग </strong></p>
         <button class="btn btn-secondary" id="btn-employee">Start Employee Training</button>
       </div>
     </div>
@@ -233,7 +238,7 @@
       <span class="close-btn" onclick="closeModal()">&times;</span>
       <h3>Your Password</h3>
       <p><span id="popup-password"></span></p>
-      <button class="copy-btn" onclick="copyPassword()">Copy Password</button>
+      <button class="copy-btn" onclick="copyPassword()">Copy Password / पासवर्ड कॉपी करें </button>
       <p id="copy-msg" style="color:green; display:none; margin-top:10px;">Password copied!</p>
     </div>
   </div>
@@ -269,7 +274,7 @@
 
     const shop = shopData.find(shop => shop.pwd === pwdFromUrl);
     if (shop) {
-      shopDetails.innerText = `Shop: ${shop.shopname} | Market: ${shop.marketname}`;
+      shopDetails.innerText = `Shop Name: ${shop.shopname} | Market Name: ${shop.marketname}`;
     } else {
       shopDetails.innerText = "⚠️ Shop not found!";
     }
@@ -350,6 +355,7 @@
   </script>
 </body>
 </html>
+
 
 
 
